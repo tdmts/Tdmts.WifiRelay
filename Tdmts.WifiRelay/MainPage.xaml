@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="Tdmts.WifiRelay.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tdmts.WifiRelay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded" Unloaded="Page_Unloaded">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Windows 10 IOT Core Switching Terminal" Padding="5" FontSize="18" />
+                <TextBlock Text="Location: stables" Padding="5" FontSize="12" />
+            </StackPanel>
+            <StackPanel>
+                <Button Name="btnToggle" Margin="20" Padding="20" Click="btnToggle_Click" HorizontalAlignment="Center">Toggle</Button>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="5" Text="This program has been started at:" />
+                    <TextBlock Name="lblStartDateTime" Padding="5" Text="Unknown" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="5" Text="This program has been running for:" />
+                    <TextBlock Name="lblRunningDateTime" Padding="5" Text="Unknown" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="5" Text="The time the program reports is now:" />
+                    <TextBlock Name="lblCurrentDateTime" Padding="5" Text="Unknown" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="5" Text="Status of the button:" />
+                    <TextBlock Name="lblStatusButton" Padding="5" Text="Unknown" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="5" Text="Status of the first relay:" />
+                    <TextBlock Name="lblStatusRelay1" Padding="5" Text="Unknown" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="5" Text="Status of the second relay:" />
+                    <TextBlock Name="lblStatusRelay2" Padding="5" Text="Unknown" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Padding="5" Text="Latest exception thrown:" />
+                    <TextBlock Name="lblException" Padding="5" Text="" />
+                </StackPanel>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Page>
